@@ -2,7 +2,7 @@ def game
 	puts 'Chose one: (P/R/S)'
 	pick = gets.chomp.strip
 	until pick.length == 1 && ! pick.scan(/[prsPRS]/).empty?
-		puts 'Invalid input, you asshole!'
+		puts 'Invalid input!'
 		puts 'Chose one: (P/R/S)'
 		pick = gets.chomp.strip
 	end
